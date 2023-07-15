@@ -1,0 +1,286 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #07010cfd;
+  cursor: url('./maozinha.cur'), default;  
+}
+
+
+.container {
+  height: 100vh;
+  color: #afaeae;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header{
+  padding: 50px;
+  background: linear-gradient(to bottom,#0e010e,  #222222);  
+}
+
+footer {
+padding: 0px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+a:hover{
+  color: #9783bd;  
+}
+
+.content {
+  text-align: center;
+  margin-bottom: 50px;
+  display: grid;  
+}
+
+.section {
+  grid-template-rows: 1fr;
+  gap: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+
+#inicio {
+  background-image:url('https://2.bp.blogspot.com/-p_yJXH7SYWE/WxcRDcRXUzI/AAAAAAAAqmo/jrsOsTP3tYYyb564OGqZiKXNX07zZjKlwCLcBGAs/s940/afamiliaaddams-2019%2B%25282%2529.jpg');
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgba(244, 241, 244, 0.904);
+}
+
+#galeria {
+  background: linear-gradient(to bottom,#0e010e,  #222222);
+}
+
+#personagens {
+  background: linear-gradient(to bottom,#0e010e,  #222222);
+}
+
+#contato {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fm.leiaja.com%2Fsites%2Fdefault%2Ffiles%2Ffield%2Fimage%2Fcultura%2Ftopo%2F2019%2F10%2Fa_familia_addams_capa.png&f=1&nofb=1&ipt=ff2d69131a7492401cfb47706f701f1b49523e2937256c0cfba8715d48ea355b&ipo=images");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100rem;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.subscribe-form input,
+.subscribe-form button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.subscribe-form button {
+  background-color: #302c44;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.subscribe-form button:hover {
+  background-color: #5e00aa;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 0 0 200px;
+  background-color: #08010e;
+  color: #888788;
+  background: linear-gradient(to bottom, #222222, #0e010e);
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5%;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  cursor: url('./lupa.cur'), default;  
+
+}
+
+.card:hover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  cursor: url('./ferramenta.cur'), default;  
+
+}
+
+.image-overlay {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.image-overlay img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.image-overlay:hover img {
+  transform: scale(1.1);
+}
+
+.image-overlay:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(32, 6, 6, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-overlay:hover:before {
+  opacity: 1;
+}
+
+.image-overlay img,
+.image-overlay:before {
+  transition: opacity 0.3s ease;
+}
+
+.image-overlay:before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #180122;
+  font-size: 24px;
+}
+
+.audio-player{
+  padding: 5px;
+  background: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;  
+}
+
+/* #playPauseBtn{
+  border-radius: 100%;
+  background-color: #575757;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+#playPauseBtn:hover{
+  background-color: #5c1929;
+}
+#playPauseBtn i {
+  font-size: 30px;
+} */
+
+.paused{
+  background-image: url('./play.png');
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;  
+}
+.playing {
+  background-image: url('./stop.png');
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none; 
+}
+
+.msg{  
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 36px;
+  color: #888788;
+  background: linear-gradient(to bottom, #222222, #0e010e);  
+}
+.msggroup {
+  margin-bottom: 20px;
+}
+.msglabel {
+  display: block;
+  font-weight: bold;
+  color: #89898b;
+}
+.msginput, .msgtextarea{
+  background-color: #0a0a0a;
+  color: #d1c2c2;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(95, 92, 92);
+
+}
+.msgbutton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f3ebeb;
+  color: rgb(2, 2, 2);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.msgbutton:hover {
+  background-color: rgb(3, 3, 3);
+  color: #f5f2f7;
+}
+

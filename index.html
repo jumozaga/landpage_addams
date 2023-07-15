@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mansão Addams</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#personagens">Personagens</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <div class="content">
+          <section class="section" id="inicio">
+          <br><br><br><br>
+          <h1>Bem-vindo à Mansão Addams</h1>
+          <p>Uma família peculiar com um estilo de vida único.</p>
+          <form class="subscribe-form">
+          <input type="text" placeholder="Nome" />
+          <input type="email" placeholder="E-mail" />
+          <button type="submit">Inscrever-se</button>
+        </form>
+
+
+          </section>
+          <section class="section" id="personagens">
+            <h2>Personagens</h2>
+            <div class="card-container">
+              <div class="card">
+                <img
+                  src="https://i.pinimg.com/564x/3e/48/a5/3e48a526a7dd57857b3741d265dbefaa.jpg"
+                  alt="Gomez Addams"
+                />
+                <h3>Gomez Addams</h3>
+              </div>
+              <div class="card">
+                <img
+                  src="https://i.pinimg.com/564x/fa/98/34/fa9834237ae14a45cea7bae1fde65e69.jpg"
+                  alt="Morticia Addams"
+                />
+                <h3>Morticia Addams</h3>
+              </div>
+              <div class="card">
+                <img
+                  src="https://i.pinimg.com/564x/93/55/bc/9355bc2f6f0e5f656df6131074994fab.jpg"
+                  alt="Wandinha Addams"
+                />
+                <h3>Wandinha Addams</h3>
+              </div>
+              <div class="card">
+                <img
+                  src="https://i.pinimg.com/236x/54/09/79/5409799c587e1c7ad210779c4ba07c67.jpg"
+                  alt="Mãozinha"
+                />
+                <h3>Mãozinha Addams</h3>
+              </div>
+              <div class="card">
+                <img
+                  src="https://i.pinimg.com/564x/3e/cf/d5/3ecfd59d0dcaaee560dd0f2c6afc00fd.jpg"
+                  alt="Feioso"
+                />
+                <h3>Feioso Addams</h3>
+              </div>
+            </div>
+          </section>
+          <section class="section" id="galeria">
+            <h2>Galeria</h2>
+            <div class="gallery-container">
+              <div class="image-overlay">
+                <img
+                  src="https://i.pinimg.com/564x/a9/1a/b8/a91ab8a6b5729016dfc93f8e9097861c.jpg"
+                  alt="Foto 1"
+                />
+              </div>
+              <div class="image-overlay">
+                <img
+                  src="https://i.pinimg.com/564x/7d/62/b4/7d62b461da17ca2e140d5598d75a2feb.jpg"
+                  alt="Foto 2"
+                />
+              </div>
+              <div class="image-overlay">
+                <img
+                  src="https://i.pinimg.com/564x/19/de/3b/19de3b6f83bb9d60de19a15c02a7233f.jpg"
+                  alt="Foto 3"
+                />
+              </div>
+            </div>
+          </section>
+
+          <section class="section" id="contato">
+            <div class="msg">
+            <p>Formulário de Contato</p>
+                     
+            <form id="contactForm">
+              <div class="msggroup">
+                <label class="msglabel" for="name">Nome:</label>
+                <input class="msginput" type="text" id="name" name="name" required>
+              </div>
+              <div class="msggroup">
+                <label class="msglabel" for="email">Email:</label>
+                <input class="msginput" type="email" id="email" name="email" required>
+              </div>
+              <div class="msggroup">
+                <label class="msglabel" for="message">Mensagem:</label>
+                <textarea class="msgtextarea" name="message" rows="4" required></textarea>
+              </div>
+              <button class="msgbutton" type="submit">Enviar</button>
+            </form>
+            </div>
+            
+          
+          </section>
+        </div>
+      </main>
+      <footer>
+
+      </footer>
+    </div>
+
+    <div class="audio-player">
+      <audio id="themeSong" src="themesong.mp3"></audio>
+      <!-- <button id="playPauseBtn"><i class='bx bx-skip-next-circle'></i></button> -->
+      <button id="playPauseBtn"></button>
+    </div>
+  </body>
+</html>
