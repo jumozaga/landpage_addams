@@ -3,9 +3,8 @@ body {
   padding: 0;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: #07010cfd;
-  cursor: url('./maozinha.cur'), default;  
+  /* cursor: url('./assets/'), default;   */
 }
-
 
 .container {
   height: 100vh;
@@ -22,6 +21,20 @@ header{
 
 footer {
 padding: 0px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 0%;
+margin-bottom: 0%;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.icon{
+  font-size: 25px;
+  font-size: 25px;
+  margin: 0 10px;
+  color: #706e71;
+  margin: none;
 }
 
 nav ul {
@@ -133,7 +146,7 @@ p {
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 10px;
-  cursor: url('./lupa.cur'), default;  
+  cursor: url('./assets/lupa.cur'), default;  
 
 }
 
@@ -148,7 +161,7 @@ p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
-  cursor: url('./ferramenta.cur'), default;  
+  cursor: url('./assets/ferramenta.cur'), default;  
 
 }
 
@@ -225,7 +238,7 @@ p {
 } */
 
 .paused{
-  background-image: url('./play.png');
+  background-image: url('./assets/play.png');
   width: 35px;
   height: 35px;
   background-color: transparent;
@@ -234,7 +247,7 @@ p {
   border: none;  
 }
 .playing {
-  background-image: url('./stop.png');
+  background-image: url('./assets/stop.png');
   width: 35px;
   height: 35px;
   background-color: transparent;
